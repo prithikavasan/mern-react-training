@@ -9,18 +9,22 @@ import Services from './pages/Services'
 import State from "./Hooks/State";
 import LinkAndDislike from "./Hooks/LinkAndDislike";
 import Effect from "./Hooks/Effect";
-
+import Product from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
 const App = () => {
   return (
     <>
    <Navbar/>
    <Routes>
-      <Route path="/" Component={Home}/>
-      <Route path="/about" Component={About}/>
-      <Route path="/services" Component={Services}/>
-      <Route path="/contact" Component={Contact}/>
+      <Route path="/" Component={<Home/>}/>
+      <Route path="/about" Component={<About/>}/>
+      <Route path="/services" Component={<Services/>}/>
+      <Route path="/contact" Component={<Contact/>}/>
       <Route path="/state" element={<State/>}></Route>
       <Route path="/effect" element={<Effect/>}/>
+      <Route path="/product" element={<Product/>}/>
+      <Route path="/productDetails/:id" element={<ProductDetails/>}/>
+
     </Routes>
 
       <User name="Prithika" department="IT" 
