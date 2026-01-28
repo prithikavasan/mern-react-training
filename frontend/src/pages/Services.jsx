@@ -1,8 +1,12 @@
 import React from 'react'
+import User from './User'
 
 const Services = () => {
   return (
-    <div>Services</div>
+    <div>
+      
+      <User/>
+    </div>
   )
 }
 

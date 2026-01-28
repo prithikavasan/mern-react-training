@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState} from 'react'
+import { useEffect } from 'react'
 const Contact = () => {
   const[form,setForm] = useState(
     {
@@ -10,6 +11,12 @@ const Contact = () => {
       dept:""
     }
   )
+useEffect(()=>{
+    console.log("Components mount")
+})
+  
+  
+
   const handleChange=(e)=>{
     const {name,value}=e.target
     setForm((prev)=>({
